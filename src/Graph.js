@@ -72,11 +72,11 @@ export default function Graph()
               }
               let result = await Getdata(obj);
               let temp = result.data;
-              console.log(temp);
+              //console.log(temp);
               if(temp.length!=0)
               {
               let temp1 = returnlabel(fromyear,frommonth,toyear,tomonth,month)
-              console.log(temp1)
+              //console.log(temp1)
               updatelabels(...[temp1])
               let t= graphdata(temp,temp1,obj);
               updatedata1(...[t]);
@@ -167,7 +167,7 @@ export default function Graph()
               }
               let result = await Getdata(obj);
               let temp = result.data;
-              console.log("line2",temp);
+              //console.log("line2",temp);
               if(temp.length!=0)
               {
               let temp1 = returnlabel(fromyear,frommonth,toyear,tomonth,month)
